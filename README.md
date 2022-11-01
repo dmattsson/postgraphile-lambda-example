@@ -131,7 +131,7 @@ Note 2: CORS is enabled by default. Remove cors() middleware in `/src/index.js` 
 
 0. Run `yarn build` to create `lambda.zip` file that you can upload to Amazon Lambda.
 1. Visit https://console.aws.amazon.com/lambda/home and click 'Create function'
-2. Select "Author from scratch" and give your function a name, select the most recent Node.js release (at least 8.10+), create (or select) a role (I granted "Simple microservice permissions")
+2. Select "Author from scratch" and give your function a name, select the most recent Node.js release (at least 16.14+), create (or select) a role (I granted "Simple microservice permissions")
 3. Click "Create function" and wait about 15 seconds; you should be greeted with a "Congratulations" message.
 4. Scroll to "Function code", select "Upload a .zip file" from "Code entry type", press the "Upload" button and select the `lambda.zip` file you generated above; then click "Save"
 5. Scroll to "Environment variables" and enter your `DATABASE_SCHEMAS` and `DATABASE_URL` settings; then click "Save"
